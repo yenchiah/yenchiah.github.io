@@ -8,6 +8,7 @@ html, body {
 
 a {
   outline: none;
+  cursor: pointer;
 }
 
 #menu-container {
@@ -16,9 +17,9 @@ a {
   top: 0;
   width: 100%;
   text-align: center;
-  background-color: #43731F;
+  background-color: #000000;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 3px 7px rgba(0, 0, 0, 0.3)
+  /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 3px 7px rgba(0, 0, 0, 0.3)*/
 }
 
 #menu {
@@ -26,7 +27,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  width: 1000px;
+  width: 850px;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 45px;
@@ -89,34 +90,23 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  width: 1000px;
+  width: 850px;
   text-align: center;
   font-size: 16px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  padding-bottom: 35px;
-  padding-top: 35px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #content a {
   text-decoration: none;
-  color: #43731F;
+  color: #9a2328;
 }
 
 #content a:hover {
   text-decoration: underline;
-}
-
-#authors {
-  font-size: 20px;
-  padding-bottom: 15px;
-  color: #4d4d4d;
-}
-
-#authors a {
-  color: #43731F;
-  opacity: 0.8;
 }
 
 #info-table {
@@ -139,14 +129,13 @@ a {
 }
 
 .text {
-  text-align: justify;
-  padding: 15px 0 15px 0;
-  margin: 0;
+  margin: 15px 0 15px 0;
+  padding: 0;
 }
 
 .image {
-  padding: 15px 0 15px 0;
-  margin: 0;
+  margin: 15px 0 15px 0;
+  padding: 0;
 }
 
 .buttons {
@@ -189,4 +178,9 @@ a {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+#me {
+  border: 1px solid #707070;
+  width: 152px;
 }
