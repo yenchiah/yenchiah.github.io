@@ -1,9 +1,18 @@
+/*************************************************************************
+ * This css is developed by Yen-Chia Hsu
+ * Copyright Yen-Chia Hsu.
+ * GitHub: https://github.com/yenchiah/project-website-template
+ * Contact: hsu.yenchia@gmail.com
+ * License: GNU General Public License v2
+ * Version: v1.1
+ *************************************************************************/
+
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: white;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  min-width: 840px;
 }
 
 a {
@@ -11,50 +20,46 @@ a {
   cursor: pointer;
 }
 
-#menu-container {
+.menu-container {
   z-index: 2;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #000000;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 3px 7px rgba(0, 0, 0, 0.3)*/
-}
-
-#menu {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  width: 850px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 45px;
+  width: 100%;
+  background-color: #212121;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-#logo {
+.menu {
+  position: relative;
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+.menu-table {
+  padding: 0 20px;
+  width: 100%;
+  margin: 0;
+  height: 50px;
+}
+
+.logo {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
-  float: left;
-  margin-top: -6px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-#logo a {
+.logo a {
   text-decoration: none;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
 }
 
-#menu-items {
+.menu-items {
   float: right;
-  margin-top: 4px;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-#menu-items a {
+.menu-items a {
   margin-left: 40px;
   text-decoration: none;
   font-weight: 500;
@@ -65,7 +70,7 @@ a {
   -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-#menu-items a:hover {
+.menu-items a:hover {
   color: rgb(255, 255, 255);
   opacity: 1;
 }
@@ -76,47 +81,35 @@ a {
   font-weight: 700 !important;
 }
 
-#content-container {
+.content-container {
   z-index: 1;
-  position: absolute;
-  top: 60px;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  height: auto;
 }
 
-#content {
+.content {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  width: 850px;
+  margin: 0 auto;
   font-size: 16px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  max-width: 840px;
 }
 
-#content a {
+.content a {
   text-decoration: none;
   color: #9a2328;
 }
 
-#content a:hover {
+.content a:hover {
   text-decoration: underline;
 }
 
-#info-table {
+.content-table {
+  padding: 20px;
   width: 100%;
   margin: 0;
-}
-
-#download-button {
-  width: 160px;
-  height: 35px;
-  line-height: 35px;
 }
 
 .left-align {
@@ -127,29 +120,60 @@ a {
   float: right;
 }
 
+h2 {
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
 .text {
-  margin: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
   padding: 0;
 }
 
 .image {
   margin: 15px 0 15px 0;
   padding: 0;
+  border: 1px solid #666666;
 }
 
 .buttons {
-  padding: 15px 0 15px 0;
-  margin: 0;
+  margin: 10px 0 10px 0;
+  padding: 0;
 }
 
-.force-scroll {
-  overflow-y: scroll;
+.image-button {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: block;
+  border: 1px solid #666666;
+  margin: 10px 0 5px 0;
+  padding: 0;
+  transition: border 0.2s, box-shadow 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-button:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  border: 1px solid #222222;
+}
+
+.image-button-caption {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .custom-button {
+  padding: 10px 25px;
   display: table;
   text-align: center;
-  background-color: #62a52c;
+  background-color: #7d7d7d;
   color: white;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -162,12 +186,12 @@ a {
 }
 
 .custom-button:hover {
-  background-color: #43731F;
+  background-color: #4d4d4d;
 }
 
 .custom-button:active {
   box-shadow: none;
-  background-color: #43731F;
+  background-color: #4d4d4d;
 }
 
 .noselect {
@@ -179,15 +203,50 @@ a {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
-#me {
-  border: 1px solid #707070;
-  width: 152px;
+.center-align-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h2 {
-  font-size: 1.5em;
+.left-align-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-large {
+  font-size: 20px;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.iframe-container {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  min-width: 840px;
+}
+
+.iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.force-no-scroll {
+  overflow-y: hidden;
+}
+
+.force-scroll {
+  overflow-y: scroll;
 }
