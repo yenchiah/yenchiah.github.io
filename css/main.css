@@ -188,6 +188,7 @@ ol.publication {
   list-style: none;
   margin: 7px 0 7px 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 ol.publication li {
