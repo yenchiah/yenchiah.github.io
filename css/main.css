@@ -11,7 +11,7 @@ html, body {
   padding: 0;
   background-color: white;
   font-family: Verdana, Geneva, sans-serif;
-  min-width: 940px;
+  min-width: 800px;
 }
 
 a {
@@ -29,7 +29,7 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 800px;
 }
 
 .menu-table {
@@ -95,7 +95,7 @@ a {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 940px;
+  max-width: 800px;
 }
 
 .content p a {
@@ -129,6 +129,10 @@ h2 {
   vertical-align: middle;
   font-weight: bold;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  margin: 10px 0 10px 0;
 }
 
 .badge-text {
