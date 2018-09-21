@@ -216,7 +216,7 @@ ol.publication.C-list li {
 }
 
 ol.publication.C-list li:before {
-  content: "[C." counter(C-counter) "]";
+  content: "[C" counter(C-counter) "]";
 }
 
 ol.publication.J-list {
@@ -228,7 +228,7 @@ ol.publication.J-list li {
 }
 
 ol.publication.J-list li:before {
-  content: "[J." counter(J-counter) "]";
+  content: "[J" counter(J-counter) "]";
 }
 
 ol.publication.T-list {
@@ -240,7 +240,7 @@ ol.publication.T-list li {
 }
 
 ol.publication.T-list li:before {
-  content: "[T." counter(T-counter) "]";
+  content: "[T" counter(T-counter) "]";
 }
 
 ol.publication.O-list {
@@ -252,7 +252,7 @@ ol.publication.O-list li {
 }
 
 ol.publication.O-list li:before {
-  content: "[O." counter(O-counter) "]";
+  content: "[O" counter(O-counter) "]";
 }
 
 ol.publication.P-list {
@@ -264,7 +264,7 @@ ol.publication.P-list li {
 }
 
 ol.publication.P-list li:before {
-  content: "[P." counter(P-counter) "]";
+  content: "[P" counter(P-counter) "]";
 }
 
 .noselect {
