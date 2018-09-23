@@ -11,7 +11,7 @@ html, body {
   padding: 0;
   background-color: white;
   font-family: Verdana, Geneva, sans-serif;
-  min-width: 800px;
+  min-width: 750px;
 }
 
 a {
@@ -29,7 +29,7 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 750px;
 }
 
 .menu-table {
@@ -95,16 +95,15 @@ a {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 800px;
+  max-width: 750px;
 }
 
 .content p a {
   text-decoration: none;
-  color: #dc3545;
+  color: #005cbf;
 }
 
 .content p a:hover {
-  color: #a71120;
   text-decoration: underline;
 }
 
@@ -289,6 +288,18 @@ ol.publication.F-list li {
 
 ol.publication.F-list li:before {
   content: "[Featured.F" counter(F-counter) "]";
+}
+
+ol.publication.A-list {
+  counter-reset: A-counter;
+}
+
+ol.publication.A-list li {
+  counter-increment: A-counter;
+}
+
+ol.publication.A-list li:before {
+  content: "[A" counter(A-counter) "]";
 }
 
 .noselect {
