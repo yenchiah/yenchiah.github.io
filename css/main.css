@@ -267,6 +267,30 @@ ol.publication.P-list li:before {
   content: "[P" counter(P-counter) "]";
 }
 
+ol.publication.M-list {
+  counter-reset: M-counter;
+}
+
+ol.publication.M-list li {
+  counter-increment: M-counter;
+}
+
+ol.publication.M-list li:before {
+  content: "[M" counter(M-counter) "]";
+}
+
+ol.publication.F-list {
+  counter-reset: F-counter;
+}
+
+ol.publication.F-list li {
+  counter-increment: F-counter;
+}
+
+ol.publication.F-list li:before {
+  content: "[Featured.F" counter(F-counter) "]";
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
