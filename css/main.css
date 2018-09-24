@@ -38,7 +38,7 @@ a {
 }
 
 .menu-table {
-  padding: 5px 20px;
+  padding: 7px 20px;
   width: 100%;
   margin: 0;
 }
@@ -67,8 +67,8 @@ a {
 }
 
 .menu-items a {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
