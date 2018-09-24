@@ -6,12 +6,17 @@
  * Instead, add your own css in the index.css file.
  *************************************************************************/
 
+@media screen and (max-width: 500px) {
+  .menu-items a {
+    width: 100%;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
   background-color: white;
   font-family: Verdana, Geneva, sans-serif;
-  min-width: 750px;
 }
 
 a {
@@ -29,14 +34,13 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .menu-table {
-  padding: 0 20px;
+  padding: 5px 20px;
   width: 100%;
   margin: 0;
-  height: 60px;
 }
 
 .logo {
@@ -52,21 +56,34 @@ a {
 }
 
 .menu-items {
-  float: right;
   color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
 }
 
 .menu-items a {
-  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
   color: rgb(255, 255, 255);
   opacity: 0.7;
+  flex: 1 auto;
   transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -webkit-transition: opacity 0.1s ease-in-out;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.menu-items a:not(:last-child) {
+  margin-right: 20px;
 }
 
 .menu-items a:hover {
@@ -90,12 +107,10 @@ a {
   position: relative;
   margin: 0 auto;
   font-size: 16px;
-  /*font-family: Verdana, Geneva, sans-serif;*/
-  /*font-family: Georgia, Times, "Times New Roman", serif;*/
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .content p a {
@@ -113,12 +128,49 @@ a {
   margin: 0;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+.flex-row-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .left-align {
   float: left;
 }
 
 .right-align {
   float: right;
+}
+
+.full-width {
+  width: 100%;
 }
 
 h2 {
