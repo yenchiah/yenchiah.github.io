@@ -34,7 +34,7 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 850px;
 }
 
 .menu-table {
@@ -110,7 +110,7 @@ a {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 750px;
+  max-width: 850px;
 }
 
 .content p a {
