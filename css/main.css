@@ -83,7 +83,7 @@ a {
 }
 
 .menu-items a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .menu-items a:hover {
