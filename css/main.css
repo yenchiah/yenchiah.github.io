@@ -1,20 +1,10 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.8
+ * Version: v1.9
  * This css file is for the main template.
  * If you want to keep this template updated, avoid modifying this file.
  * Instead, add your own css in the index.css file.
  *************************************************************************/
-
-@media screen and (max-width: 500px) {
-  .menu-items a {
-    width: 100%;
-  }
-
-  .menu-items a:first-child {
-    margin-top: 10px;
-  }
-}
 
 html, body {
   margin: 0;
@@ -38,22 +28,13 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
+  max-width: 900px;
 }
 
 .menu-table {
-  padding: 7px 10px;
+  padding: 10px 10px;
   width: 100%;
   margin: 0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  box-sizing: border-box;
 }
 
 .logo a {
@@ -65,20 +46,20 @@ a {
   flex: 1 auto;
 }
 
-.menu-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  box-sizing: border-box;
+.menu-button {
+  width: 45px;
+  height: 45px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 30px;
+  height: 30px;
 }
 
 .menu-items a {
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 7px;
-  margin-bottom: 7px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -118,6 +99,7 @@ a {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
+  max-width: 900px;
 }
 
 .content p a {
@@ -165,6 +147,16 @@ a {
   box-sizing: border-box;
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
 .flex-item-stretch {
   flex: 1 auto;
 }
@@ -187,6 +179,10 @@ a {
 
 .full-width {
   width: 100%;
+}
+
+.force-hide {
+  display: none !important;
 }
 
 h2 {
@@ -246,6 +242,10 @@ ul {
   text-align: center;
   margin-top: -10px;
   margin-bottom: 10px;
+}
+
+.max-width-400 {
+  max-width: 400px;
 }
 
 ol.publication {
@@ -408,7 +408,7 @@ ol.publication.A-list li p:before {
 
 .iframe-container {
   position: absolute;
-  top: 60px;
+  top: 67px;
   bottom: 0;
   left: 0;
   height: auto;
@@ -457,6 +457,10 @@ hr {
 }
 
 .button-group .custom-image-button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button-group .custom-dropdown:not(:last-child) {
   margin-right: 15px;
 }
 
@@ -677,4 +681,161 @@ hr {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.custom-dropdown {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+}
+
+.custom-dropdown > a {
+  padding: 5px 26px 5px 8px;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: background-color 0.1s, box-shadow 0.1s, border 0.1s;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  color: black;
+  height: 28px;
+  border: 1px solid #7d7d7d;
+  background-color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-dropdown > a > span {
+  text-align: left;
+  font-size: 14px !important;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.custom-dropdown > a:after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: black;
+}
+
+.custom-dropdown > div {
+  display: none;
+  position: absolute;
+  margin-top: -1px;
+  border: 1px solid #7d7d7d;
+  background-color: white;
+  z-index: 1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 100%;
+}
+
+.custom-dropdown > a:focus {
+  pointer-events: none;
+}
+
+.custom-dropdown > a:focus + div {
+  display: block;
+}
+
+.custom-dropdown > div:hover {
+  display: block;
+}
+
+.custom-dropdown > div > a {
+  color: black;
+  padding: 5px 8px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  outline: none;
+  font-size: 14px !important;
+  line-height: 16px;
+  height: 26px;
+  white-space: nowrap;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  box-sizing: border-box;
+}
+
+.custom-dropdown > div > a:hover {
+  background-color: #e1e1e1;
+  color: black;
+}
+
+/********************************************************************************
+The @media part need to be put at the end to override all previous css
+********************************************************************************/
+@media screen and (min-width: 900px) {
+  .flex-item-stretch {
+    flex: 1;
+  }
+
+  .flex-item-stretch-2 {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+    width: calc(70% - 45px);
+  }
+
+  .menu-items {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-items a:first-child {
+    margin-top: 10px;
+  }
+
+  .menu-items a {
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-button {
+    width: calc(30% - 45px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+  }
+
+  .menu-button:focus {
+    pointer-events: none;
+  }
+
+  .menu-button:focus + .menu-items {
+    display: block;
+  }
+
+  .menu-button:focus + .menu-items a {
+    display: block;
+  }
+
+  .menu-items:hover {
+    display: block;
+  }
+
+  .menu-items > a {
+    display: block;
+  }
 }

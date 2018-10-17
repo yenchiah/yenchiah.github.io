@@ -2,23 +2,6 @@
  * This css file is for your own style.
  *************************************************************************/
 
-.menu {
-  max-width: 850px;
-}
-
-.content {
-  max-width: 850px;
-}
-
-@media screen and (min-width: 850px) {
-  .flex-item-stretch {
-    flex: 1;
-  }
-  .flex-item-stretch-2 {
-    flex: 2;
-  }
-}
-
 #me {
   width: 180px;
   border-radius: 50%;
