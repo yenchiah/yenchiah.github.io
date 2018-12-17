@@ -5,10 +5,11 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -26,25 +27,10 @@
   </script>
 </head>
 <body>
-<div class="menu-container">
-  <div class="menu">
-    <div class="menu-table flex-row-space-between">
-      <div class="logo flex-row-center">
-        <a href="index.html">Yen-Chia Hsu</a>
-      </div>
-      <a class="menu-button" tabindex="0" href="javascript:void(0)">
-        <img class="noselect" src="img/menu.png">
-      </a>
-      <div class="menu-items flex-row-center flex-item">
-        <a href="http://yenchiah.wordpress.com/">Projects</a>
-        <a href="file/CV.pdf">CV</a>
-        <a href="http://www.linkedin.com/pub/yen-chia-hsu/58/a26/716">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=l7E5Z7AAAAAJ">Google Scholar</a>
-        <a href="http://github.com/yenchiah">GitHub</a>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="menu-container"></div>
+<script>
+  $(function() {$(".menu-container").load("menu.html");});
+</script>
 <div class="content-container">
   <div class="content">
     <div class="content-table flex-column">
@@ -65,6 +51,7 @@
           </p>
         </div>
       </div>
+
       <div class="flex-row">
         <div class="flex-item flex-column">
           <p class="text">
@@ -619,6 +606,27 @@
             </li>
           </ol>
         </div>
+        <!--Start Projects-->
+        <!--<div class="flex-row full-width">
+          <div class="flex-item flex-column full-width">
+            <h2>Projects</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-400" src="img/earthtime-story-editor.png">
+          </div>
+          <div class="flex-item flex-item-stretch-5 flex-column">
+            <p class="text">
+              <span class="highlight-text">A Tool for Creating and Editing Interactive Stories on the EarthTime Timelapse [T10]</span><br>
+              I worked in a team to develop a web-based tool that enables users to create, edit, and share
+              stories about nature changes and human impact on EarthTime, visualizing the transformation of
+              the EarthTime over three decades with images and datasets. (<a href="https://earthtime.org">https://earthtime.org</a>)
+            </p>
+          </div>
+        </div>-->
+        <!--End Projects-->
       </div>
     </div>
   </div>

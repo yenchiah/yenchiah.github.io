@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v2.3
+ * Version: v3.1
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -27,6 +27,15 @@ img {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
+video {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
 h2 {
   font-size: 24px;
   margin: 10px 0 0 0;
@@ -43,7 +52,7 @@ hr {
   border: 0;
   height: 1px;
   background: #333;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .menu-container {
@@ -118,12 +127,6 @@ hr {
 .menu-items a:hover {
   color: rgb(255, 255, 255);
   opacity: 1;
-}
-
-.menu-highlight {
-  color: rgb(255, 255, 255) !important;
-  opacity: 1 !important;
-  font-weight: 700 !important;
 }
 
 .content-container {
@@ -206,6 +209,18 @@ hr {
   flex: 1 auto;
 }
 
+.flex-item-stretch-3 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-4 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-5 {
+  flex: 1 auto;
+}
+
 .flex-item {
   margin: 0 20px;
 }
@@ -259,13 +274,18 @@ hr {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
-.image img {
+.image img, .image video {
   width: 100%;
   height: auto;
   box-sizing: border-box;
   display: table-cell;
   overflow: hidden;
   border-radius: 2px;
+}
+
+.image-wrap-text {
+  float: left;
+  margin: 5px 40px 25px 0
 }
 
 .image-caption {
@@ -277,6 +297,10 @@ hr {
 
 .max-width-400 {
   max-width: 400px;
+}
+
+.max-width-140 {
+  max-width: 140px;
 }
 
 ol.publication {
@@ -523,7 +547,7 @@ ol.publication.A-list li p:before {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
-.gallery a img {
+.gallery a img, .gallery a video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
@@ -548,6 +572,18 @@ The @media part need to be put at the end to override all previous css
 
   .flex-item-stretch-2 {
     flex: 2;
+  }
+
+  .flex-item-stretch-3 {
+    flex: 3;
+  }
+
+  .flex-item-stretch-4 {
+    flex: 4;
+  }
+
+  .flex-item-stretch-5 {
+    flex: 5;
   }
 }
 
