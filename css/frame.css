@@ -82,6 +82,12 @@ hr {
   margin: 0;
 }
 
+.menu-highlight {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
 .logo {
   margin-left: 20px;
 }
@@ -572,8 +578,8 @@ ol.publication.A-list li p:before {
 }
 
 /********************************************************************************
-  The @media part need to be put at the end to override all previous css
-  ********************************************************************************/
+ The @media part need to be put at the end to override all previous css
+ ********************************************************************************/
 @media screen and (min-width: 900px) {
   .flex-item-stretch {
     flex: 1;
