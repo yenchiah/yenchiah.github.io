@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.1
+ * Version: v3.6
  * This CSS file has control elements that do not require JavaScript
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -61,8 +61,6 @@
 .custom-button:disabled {
   opacity: 0.4;
   cursor: default;
-  border-color: #7d7d7d;
-  background-color: #7d7d7d;
 }
 
 .custom-button-primary {
@@ -140,6 +138,20 @@
   user-select: none;
 }
 
+.custom-button-flat.large {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 17px;
+  border-radius: 56px;
+}
+
+.custom-button-flat.small {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px;
+  border-radius: 42px;
+}
+
 .custom-button-flat:disabled {
   opacity: 0.4;
   cursor: default;
@@ -150,8 +162,44 @@
   height: 20px;
 }
 
+.custom-button-flat.small img {
+  width: 16px;
+  height: 16px;
+}
+
+.custom-button-flat.large img {
+  width: 24px;
+  height: 24px;
+}
+
 .custom-button-flat span {
   margin-left: 6px;
+}
+
+.custom-textbox {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #7d7d7d;
+  font-size: 16px !important;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 37px;
+  max-height: 37px;
+  resize: vertical;
+}
+
+textarea.custom-textbox {
+  min-height: 60px !important;
+  max-height: 200px !important;
+}
+
+input[readonly].custom-textbox {
+  cursor: default;
+  pointer-events: none;
+  background: rgb(230, 230, 230);
 }
 
 .control-group {
@@ -191,6 +239,14 @@
 }
 
 .control-group .custom-button-flat:not(:last-child) {
+  margin-right: 15px;
+}
+
+.control-group .custom-textbox {
+  margin: 10px 0 10px 0;
+}
+
+.control-group .custom-textbox:not(:last-child) {
   margin-right: 15px;
 }
 
