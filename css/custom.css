@@ -11,16 +11,12 @@
   flex: 1 auto;
 }
 
-.right-margin-10 {
-  margin-right: 10px !important;
-}
-
 .max-width-600 {
   max-width: 600px;
 }
 
 @media screen and (min-width: 900px) {
   .flex-item-stretch-6 {
-    flex: 6;
+    flex: 5.5;
   }
 }
