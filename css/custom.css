@@ -2,6 +2,10 @@
  * This css file is for your own style.
  *************************************************************************/
 
+.content-table>div:first-child>div:first-child>h2:first-child {
+  margin-top: 0;
+}
+
 #me {
   width: 180px;
   border-radius: 50%;
